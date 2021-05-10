@@ -1,0 +1,52 @@
+.status-bar {
+  display: flex;
+  height: auto;
+  width: 100vw;
+  align-items: center;
+  box-sizing: border-box;
+  background-color: white;
+  z-index: 5;
+  padding: 15px 10px 15px 10px;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+.status-bar a {
+  color: black;
+}
+.menu,
+.side-menu {
+  display: flex;
+  align-items: center;
+}
+.logo {
+  width: 10%;
+  text-align: center;
+  justify-content: flex-start;
+}
+.side-menu {
+  width: 20%;
+  justify-content: space-evenly;
+}
+.menu {
+  width: 70%;
+  justify-content: space-around;
+}
+.side-menu__login a,
+.side-menu__logout a,
+.side-menu__mypage a {
+  color: rgba(0, 0, 0, 0.5);
+}
+.logo img {
+  width: 25%;
+  height: 25%;
+}
+.menu a:focus,
+.menu a:hover {
+  color: rgba(0, 0, 0, 0.5);
+}
+.side-menu__login a:hover,
+.side-menu__logout a:hover,
+.side-menu__mypage a:hover {
+  color: rgba(0, 0, 0);
+}
