@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="css/styles.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hardware</title>
+  </head>
+  <body>
+    <header class="status-bar">
+      <section class="logo">
+        <a href="index.html"><img src="img/logo.png" /></a>
+      </section>
+      <div class="menu">
+        <!-- <span><i class="fas fa-bars fa-lg"></i></span> -->
+        <span class="menu__intro"><a href="introduce.html">Introduce</a></span>
+        <span class="menu__hard"><a href="hardware.html">Hardware</a></span>
+        <span class="menu__soft"><a href="software.html">Software</a></span>
+        <span class="menu__re"><a href="review.html">Review</a></span>
+      </div>
+      <div class="side-menu">
+        <span class="side-menu__login"><a href="login.html">Login</a></span>
+        <span class="side-menu__login"><a href="join.html">Join</a></span>
+        <!-- <span class="side-menu__logout"><a href="">Logout</a></span>
+        <span class="side-menu__mypage">
+          <a href="mypage.html"><i class="far fa-user-circle fa-2x"></i></a>
+        </span> -->
+      </div>
+    </header>
+
+    <div class="flex al-center">
+      <spna class="main-text">Having trouble singing in?</spna>
+      <div class="w-full flex al-center div-find js-find__id">
+        <spna class="js-text find-text find-text__click">forgot your ID?</spna>
+        <div class="flex al-center edge lg:edge-width sm:edge-width sm:edge js-find-box">
+          <spna>Enter the information below to find</spna>
+          <form action="" class="form-control">
+            <div class="w-full input-relative margin-bt">
+              <input class="input-control" type="text" id="name" required />
+              <label class="label-control" for="name">Name</label>
+              <div class="sub-text non-showing"></div>
+            </div>
+
+            <div class="w-full input-relative margin-bt">
+              <input class="input-control" type="email" id="email" required />
+              <label class="label-control" for="email">email</label>
+              <div class="sub-text non-showing"></div>
+            </div>
+
+            <div class="w-full input-relative margin-bt">
+              <button class="btn-control" type="submit">Continue</button>
+              <div class="sub-text non-showing">your ID is ''</div>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div class="w-full flex al-center div-find js-find__pw">
+        <spna class="js-text find-text">forgot your Password?</spna>
+        <div class="flex al-center edge lg:edge-width sm:edge-width sm:edge js-find-box non-showing">
+          <spna>Enter your Hompage ID to get started</spna>
+          <form action="" class="form-control">
+            <div class="w-full input-relative margin-bt">
+              <input class="input-control" type="text" id="id" required />
+              <label class="label-control" for="id">ID</label>
+              <spna class="sub-text non-showing">Homepage ID is missing</spna>
+            </div>
+
+            <div class="w-full input-relative margin-bt">
+              <button class="btn-control" type="submit">Continue</button>
+              <spna class="sub-text non-showing"></spna>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://kit.fontawesome.com/6478f529f2.js" crossorigin="anonymous"></script>
+    <script src="js/find.js"></script>
+  </body>
+</html>

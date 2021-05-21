@@ -1,0 +1,17 @@
+.find-text {
+  cursor: pointer;
+  font-size: 20px;
+  border-bottom: 1.5px solid black;
+  color: gray;
+}
+.find-text__click {
+  font-weight: 500;
+  color: black;
+}
+.div-find {
+  margin-top: 30px;
+}
+.find-text:hover {
+  color: red;
+  font-weight: 500;
+}
