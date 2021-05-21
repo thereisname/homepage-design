@@ -138,3 +138,13 @@ table {
 
   border-spacing: 0;
 }
+
+input {
+  box-sizing: border-box;
+
+  outline: none;
+}
+
+button {
+  outline: none;
+}
