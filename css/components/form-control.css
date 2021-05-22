@@ -26,6 +26,7 @@
   width: 100%;
 }
 .input-control {
+  -webkit-appearance: none;
   height: 3.29412rem;
   width: 100%;
   padding: 1.05882rem 15px 5px;
@@ -53,7 +54,7 @@
   }
 }
 .input-control:focus ~ label {
-  animation: fun 0.3s forwards;
+  animation: fun 0.2s forwards;
   color: #0071e3;
 }
 .margin-bt:first-child {
@@ -91,6 +92,7 @@
 .btn-control:focus,
 .input-control:focus {
   box-shadow: 0 0 0 3px #66b1fc;
+  -webkit-appearance: none;
 }
 .non-showing {
   display: none;
