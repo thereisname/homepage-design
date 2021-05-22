@@ -1,0 +1,62 @@
+.grid {
+  display: grid;
+}
+.col-span-6 {
+  grid-column: span 6 / span 6;
+}
+.grid-cols-6 {
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+}
+.gap-6 {
+  gap: 1.5rem;
+}
+.mt-3 {
+  margin-top: 0.7rem;
+}
+.mt-6 {
+  margin-top: 1.5rem;
+}
+.pb-3 {
+  padding-bottom: 30px;
+}
+.px-4 {
+  margin: 0;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+@media (min-width: 640px) {
+  .sm\:col-span-3 {
+    grid-column: span 3 / span 3;
+  }
+  .sm\:px-6 {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+@media (min-width: 768px) {
+  .md\:grid {
+    display: grid;
+  }
+  .md\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  .md\:col-span-2 {
+    grid-column: span 2 / span 2;
+  }
+  .md\:gap-6 {
+    gap: 1.5rem;
+  }
+  .md\:pb-3 {
+    padding-bottom: 0;
+  }
+}
+@media (min-width: 1024px) {
+  .lg\:px-36 {
+    padding-left: 9rem;
+    padding-right: 9rem;
+  }
+}
+@media (min-width: 1280px) {
+  /* xl */
+}

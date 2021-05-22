@@ -3,9 +3,6 @@
   margin-left: 1rem;
   margin-right: 1rem;
 }
-.grid {
-  display: grid;
-}
 h3 {
   font-size: 20px;
   font-weight: 500;
@@ -23,39 +20,16 @@ h3 {
 .text-right {
   text-align: right;
 }
-.col-span-6 {
-  grid-column: span 6 / span 6;
-}
-.grid-cols-6 {
-  grid-template-columns: repeat(6, minmax(0, 1fr));
-}
-.gap-6 {
-  gap: 1.5rem;
-}
 .w-full {
   width: 100%;
 }
 .input-control__profile {
   padding: 0 15px;
 }
-.mt-3 {
-  margin-top: 0.7rem;
-}
-.mt-6 {
-  margin-top: 1.5rem;
-}
 .bar-profile {
   margin-top: 50px;
   margin-bottom: 40px;
   border-bottom: 1px solid #e7e7e8;
-}
-.px-4 {
-  margin: 0;
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
-.pb-3 {
-  padding-bottom: 30px;
 }
 .mr-10 {
   margin-right: 10px;
@@ -107,9 +81,6 @@ h3 {
   border-radius: 50%;
 }
 @media (min-width: 640px) {
-  .sm\:col-span-3 {
-    grid-column: span 3 / span 3;
-  }
   .sm\:edge-profile {
   }
   .sm\:btn-profile {
@@ -117,40 +88,18 @@ h3 {
     height: auto;
     padding: 13px 20px;
   }
-  .sm\:px-6 {
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-  }
   .sm\:danger-btn {
     margin: 0 0 0 10px;
   }
 }
 @media (min-width: 768px) {
-  .md\:grid {
-    display: grid;
-  }
-  .md\:grid-cols-3 {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-  .md\:col-span-2 {
-    grid-column: span 2 / span 2;
-  }
-  .md\:gap-6 {
-    gap: 1.5rem;
-  }
-  .md\:pb-3 {
-    padding-bottom: 0;
-  }
   .md\:flex-d {
     display: flex;
     align-items: center;
   }
 }
 @media (min-width: 1024px) {
-  .lg\:px-36 {
-    padding-left: 9rem;
-    padding-right: 9rem;
-  }
+  /* lg */
 }
 @media (min-width: 1280px) {
   /* xl */
