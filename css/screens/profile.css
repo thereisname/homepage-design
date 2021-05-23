@@ -80,6 +80,15 @@ h3 {
   height: 70px;
   border-radius: 50%;
 }
+.border-radius-none {
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+}
+.choose-box {
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+  background-image: none;
+}
 @media (min-width: 640px) {
   .sm\:edge-profile {
   }
