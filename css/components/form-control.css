@@ -45,6 +45,11 @@
   left: 15px;
   color: gray;
 }
+.select-control {
+  -webkit-appearance: none;
+  background-color: white;
+  cursor: pointer;
+}
 @keyframes fun {
   to {
     padding-left: 12px;
