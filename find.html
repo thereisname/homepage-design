@@ -9,31 +9,46 @@
   </head>
   <body>
     <header class="status-bar">
-      <section class="logo">
-        <a href="index.html"><img src="img/logo.png" /></a>
-      </section>
-      <div class="menu">
-        <!-- <span><i class="fas fa-bars fa-lg"></i></span> -->
-        <span class="menu__intro"><a href="introduce.html">Introduce</a></span>
-        <span class="menu__hard"><a href="hardware.html">Hardware</a></span>
-        <span class="menu__soft"><a href="software.html">Software</a></span>
-        <span class="menu__re"><a href="review.html">Review</a></span>
-      </div>
-      <div class="side-menu">
-        <span class="side-menu__login"><a href="login.html">Login</a></span>
-        <span class="side-menu__login"><a href="join.html">Join</a></span>
-        <!-- <span class="side-menu__logout"><a href="">Logout</a></span>
-        <span class="side-menu__mypage">
-          <a href="mypage.html"><i class="far fa-user-circle fa-2x"></i></a>
-        </span> -->
+      <div class="flex w-full align-center j-content__between">
+        <button class="btn sm:non-show" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">
+          <i class="fas fa-bars fa-lg"></i>
+        </button>
+        <div class="sm:logo logo">
+          <a href="index.html"><img src="img/logo.png" /></a>
+        </div>
+        <div class="sm:menu js-menu" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel" aria-modal="true" role="dialog">
+          <div class="offcanvas-header sm:non-show">
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            <h5 id="offcanvasTopLabel">MENU</h5>
+          </div>
+          <div class="js-offcanvas-body sm:menu js-menu">
+            <span class="menu__intro"><a href="introduce.html">Introduce</a></span>
+            <span class="menu__hard"><a href="hardware.html">Hardware</a></span>
+            <span class="menu__soft"><a href="software.html">Software</a></span>
+            <span class="menu__re"><a href="review.html">Review</a></span>
+          </div>
+        </div>
+        <button class="btn sm:non-show" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+          <i class="far fa-user-circle fa-2x"></i>
+        </button>
+        <ul class="js-dropdown-menu" aria-labelledby="dropdownMenuButton1">
+          <li><a class="dropdown-item" href="login.html">Login</a></li>
+          <li><a class="dropdown-item" href="join.html">Join</a></li>
+        </ul>
+        <!-- <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+          <li><a class="dropdown-item" href="profile.html">Edit profile</a></li>
+          <li><a class="dropdown-item" href="#">Dashboard</a></li>
+          <li><a class="dropdown-item" href="#">Board</a></li>
+          <li><a class="dropdown-item" href="#">sign out</a></li>
+        </ul> -->
       </div>
     </header>
 
-    <div class="flex al-center">
+    <div class="flex-column align-center">
       <spna class="main-text">Having trouble singing in?</spna>
-      <div class="w-full flex al-center div-find js-find__id">
+      <div class="w-full flex-column align-center div-find js-find__id">
         <spna class="js-text find-text find-text__click">forgot your ID?</spna>
-        <div class="flex al-center edge lg:edge-width sm:edge-width sm:edge js-find-box">
+        <div class="flex-column align-center edge lg:edge-width sm:edge-width sm:edge js-find-box">
           <spna>Enter the information below to find</spna>
           <form action="" class="form-control">
             <div class="w-full input-relative margin-bt">
@@ -56,9 +71,9 @@
         </div>
       </div>
 
-      <div class="w-full flex al-center div-find js-find__pw">
+      <div class="w-full flex-column align-center div-find js-find__pw">
         <spna class="js-text find-text">forgot your Password?</spna>
-        <div class="flex al-center edge lg:edge-width sm:edge-width sm:edge js-find-box non-showing">
+        <div class="flex-column align-center edge lg:edge-width sm:edge-width sm:edge js-find-box non-showing">
           <spna>Enter your Hompage ID to get started</spna>
           <form action="" class="form-control">
             <div class="w-full input-relative margin-bt">
@@ -79,5 +94,11 @@
     <script src="https://kit.fontawesome.com/6478f529f2.js" crossorigin="anonymous"></script>
     <script src="js/find.js"></script>
     <script src="js/form-control.js"></script>
+    <script src="js/status-bar.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
