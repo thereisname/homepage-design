@@ -3,11 +3,14 @@
 @import 'reset.css';
 @import 'variables.css';
 
+/* src */
+@import 'src/grid-control.css';
+@import 'src/flex-control.css';
+
 /* Components */
 @import 'components/status-bar.css';
 @import 'components/form-control.css';
 @import 'components/tailwindv.css';
-@import 'components/grid-control.css';
 
 /* Screens */
 @import 'screens/hardware.css';
