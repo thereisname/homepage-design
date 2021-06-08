@@ -145,6 +145,11 @@ input {
   outline: none;
 }
 
+ul,
+li {
+  outline: none;
+}
+
 button {
   outline: none;
 }
