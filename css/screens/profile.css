@@ -8,7 +8,7 @@ h3 {
   font-weight: 500;
 }
 .danger-point {
-  color: red;
+  color: var(--red);
 }
 .edge-profile {
   padding: 24px;
@@ -19,9 +19,6 @@ h3 {
 }
 .text-right {
   text-align: right;
-}
-.w-full {
-  width: 100%;
 }
 .input-control__profile {
   padding: 0 15px;
@@ -41,7 +38,7 @@ h3 {
   display: flex;
 }
 .danger-btn {
-  background-color: red;
+  background-color: var(--red);
 }
 .danger-text {
   font-size: 17px;
@@ -87,7 +84,7 @@ h3 {
 .choose-box {
   border-bottom-right-radius: 0;
   border-top-right-radius: 0;
-  background-image: none;
+  padding-right: 1.8rem;
 }
 @media (min-width: 640px) {
   .sm\:edge-profile {
@@ -100,16 +97,4 @@ h3 {
   .sm\:danger-btn {
     margin: 0 0 0 10px;
   }
-}
-@media (min-width: 768px) {
-  .md\:flex-d {
-    display: flex;
-    align-items: center;
-  }
-}
-@media (min-width: 1024px) {
-  /* lg */
-}
-@media (min-width: 1280px) {
-  /* xl */
 }

@@ -33,44 +33,45 @@
       <span class="main-text">Create your Homepage ID</span>
       <div class="flex al-center edge lg:edge-width sm:edge-width sm:edge">
         <form action="" class="form-control">
-          <div class="w-full input-relative margin-bt flex">
-            <input class="input-control" type="text" id="name" required />
-            <label class="label-control" for="name">NAME</label>
-            <div class="sub-text non-showing"></div>
+          <div class="w-full input-relative margin-bt">
+            <input class="input-control js-input-0 js-input" type="text" id="name" required />
+            <label class="label-control js-label-0" for="name">Name</label>
+            <div class="sub-text non-showing js-errortext-0">name is missing</div>
           </div>
 
-          <div class="w-full input-relative margin-bt">
-            <input class="input-control" type="text" id="username" required />
-            <label class="label-control" for="username">User Name</label>
-            <div class="sub-text non-showing"></div>
-          </div>
-
-          <div class="bar"></div>
-
-          <div class="w-full input-relative margin-bt">
-            <input class="input-control" type="text" id="id" required />
-            <label class="label-control" for="id">ID</label>
-            <div class="sub-text non-showing"></div>
-          </div>
-
-          <div class="w-full input-relative margin-bt">
-            <input class="input-control" type="password" id="pw" required />
-            <label class="label-control" for="pw">Password</label>
-            <div class="sub-text non-showing"></div>
-          </div>
-
-          <div class="w-full input-relative margin-bt">
-            <input class="input-control" type="password" id="re_pw" required />
-            <label class="label-control" for="re_pw">Confirm Password</label>
-            <div class="sub-text non-showing"></div>
+          <div class="w-full input-relative margin-bt flex-column">
+            <input class="input-control js-input-1 js-input" type="text" id="username" required />
+            <label class="label-control js-label-1" for="username">User Name</label>
+            <div class="sub-text non-showing js-errortext-1">Username is missing</div>
           </div>
 
           <div class="bar"></div>
 
           <div class="w-full input-relative margin-bt">
-            <input class="input-control" type="email" id="email" required />
-            <label class="label-control" for="email">Email</label>
-            <div class="sub-text non-showing"></div>
+            <input class="input-control js-input-2 js-input" type="text" id="id" required />
+            <label class="label-control js-label-2" for="id">ID</label>
+            <div class="sub-text non-showing js-errortext-2">Homepage ID is missing</div>
+          </div>
+
+          <div class="w-full input-relative margin-bt">
+            <input class="input-control js-input-3 js-input" type="password" id="pw" required />
+            <label class="label-control js-label-3" for="pw">Password</label>
+            <div class="sub-text non-showing js-errortext-3">Password is missing</div>
+          </div>
+
+          <div class="w-full input-relative margin-bt">
+            <input class="input-control js-input-4 js-input" type="password" id="re_pw" required />
+            <label class="label-control js-label-4" for="re_pw">Confirm Password</label>
+            <div class="sub-text non-showing js-errortext-4">Confirm Password is missing</div>
+            <div class="sub-text non-showing">The passwords you entered do not match.</div>
+          </div>
+
+          <div class="bar"></div>
+
+          <div class="w-full input-relative margin-bt">
+            <input class="input-control js-input-5 js-input" type="email" id="email" required />
+            <label class="label-control js-label-5" for="email">Email</label>
+            <div class="sub-text non-showing js-errortext-5">Email is missing</div>
           </div>
 
           <div class="bar"></div>
@@ -323,17 +324,17 @@
           </div>
 
           <div class="w-full input-relative margin-bt">
-            <input class="input-control" type="text" id="phone" required />
-            <label class="label-control" for="phone">Phone Number</label>
-            <div class="sub-text non-showing"></div>
+            <input class="input-control js-input-6 js-input" type="text" id="phone" required />
+            <label class="label-control js-label-6" for="phone">Phone Number</label>
+            <div class="sub-text non-showing js-errortext-6">Phome Number is missing</div>
           </div>
 
           <div class="bar"></div>
 
           <div class="w-full input-relative margin-bt">
-            <input class="input-control" type="text" id="address" required />
-            <label class="label-control" for="address">Address</label>
-            <div class="sub-text non-showing"></div>
+            <input class="input-control js-input-7 js-input" type="text" id="address" required />
+            <label class="label-control js-label-7" for="address">Address</label>
+            <div class="sub-text non-showing js-errortext-7">Address is missing</div>
           </div>
 
           <div class="w-full input-relative margin-bt">
@@ -345,5 +346,6 @@
     </div>
     <script src="https://kit.fontawesome.com/6478f529f2.js" crossorigin="anonymous"></script>
     <script src="js/index.js"></script>
+    <script src="js/form-control.js"></script>
   </body>
 </html>

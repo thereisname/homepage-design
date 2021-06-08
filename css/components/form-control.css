@@ -1,13 +1,6 @@
 .w-full {
   width: 100%;
 }
-.flex {
-  display: flex;
-  flex-direction: column;
-}
-.al-center {
-  align-items: center;
-}
 .main-text {
   font-size: 35px;
   font-weight: 600;
@@ -42,25 +35,27 @@
 .label-control {
   position: absolute;
   top: 20px;
-  left: 15px;
+  left: 1.05882rem;
   color: gray;
+  transition-timing-function: ease-in;
+  transition-duration: 0.125s;
+}
+.input-control:focus ~ label {
+  font-size: 12px;
+  line-height: 1.33337;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+  top: 0.28824rem;
+  color: #0071e3;
 }
 .select-control {
   -webkit-appearance: none;
   background-color: white;
   cursor: pointer;
-}
-@keyframes fun {
-  to {
-    padding-left: 12px;
-    font-size: 12px;
-    top: 5px;
-    left: 5px;
-  }
-}
-.input-control:focus ~ label {
-  animation: fun 0.2s forwards;
-  color: #0071e3;
+  padding-right: 4.125rem;
+  background-image: var(--icon-down);
+  background-position: right 0.75rem center, center right 2.25rem;
+  background-size: 16px 12px, calc(0.75em + 0.375rem) calc(0.75em + 0.375rem);
 }
 .margin-bt:first-child {
   margin-top: 30px;
@@ -69,8 +64,8 @@
   margin-bottom: 30px;
 }
 .sub-text {
-  color: red;
-  margin-top: 5px;
+  color: var(--red);
+  margin-top: 8px;
   margin-left: 15px;
   font-size: 13px;
   font-weight: 500;
@@ -101,4 +96,37 @@
 }
 .non-showing {
   display: none;
+}
+.error-text {
+  color: var(--red);
+}
+.error-input {
+  background-color: rgba(255, 0, 0, 0.05);
+  border: 1px solid var(--red);
+  box-shadow: 0 0 0 1px var(--red);
+  background-image: var(--icon-i);
+  background-repeat: no-repeat;
+  background-position: right 0.75rem center, center right 2.25rem;
+  background-size: calc(0.75em + 0.375rem) calc(0.75em + 0.375rem);
+}
+.error-input:focus {
+  border: 1px solid #d2d2d7;
+  background-color: white;
+}
+.error-input:focus ~ label {
+  font-size: 12px;
+  line-height: 1.33337;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+  top: 0.28824rem;
+  color: var(--red);
+}
+.flex-text {
+  position: absolute;
+  color: gray;
+  font-size: 12px;
+  line-height: 1.33337;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+  top: 0.28824rem;
 }
