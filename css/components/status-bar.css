@@ -416,14 +416,14 @@
   text-align: inherit;
   text-decoration: none;
   white-space: nowrap;
-  background-color: transparent;
+  outline: none;
   border: 0;
 }
 .dropdown-item.disabled,
 .dropdown-item:disabled {
-  color: #adb5bd;
+  /* color: #adb5bd; */
   pointer-events: none;
-  background-color: transparent;
+  /* background-color: transparent; */
 }
 
 .dropdown-menu.show {
