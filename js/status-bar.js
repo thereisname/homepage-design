@@ -9,7 +9,6 @@ const OFFCANVAS = 'offcanvas';
 const OFFCANVAS_TOP = 'offcanvas-top';
 const OFFCANVAS_BODY = 'offcanvas-body';
 const DROPDOWN_MENU = 'dropdown-menu';
-const MARGIN = 'mg-r';
 
 function handleResize() {
   const width = window.innerWidth;
@@ -17,12 +16,12 @@ function handleResize() {
     offcanvasTop_btn.classList.add(OFFCANVAS, OFFCANVAS_TOP);
     offcanvas_body.classList.add(OFFCANVAS_BODY);
     dropdown_menu.classList.add(DROPDOWN_MENU);
-    dropdown_menu.classList.remove(FLEX, MARGIN);
+    dropdown_menu.classList.remove(FLEX);
   } else {
     offcanvasTop_btn.classList.remove(OFFCANVAS, OFFCANVAS_TOP);
     offcanvas_body.classList.remove(OFFCANVAS_BODY);
     dropdown_menu.classList.remove(DROPDOWN_MENU);
-    dropdown_menu.classList.add(FLEX, MARGIN);
+    dropdown_menu.classList.add(FLEX);
   }
 }
 

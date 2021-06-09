@@ -11,7 +11,6 @@
 @import 'components/status-bar.css';
 @import 'components/form-control.css';
 @import 'components/tailwindv.css';
-@import 'components/grid-control.css';
 
 /* Screens */
 @import 'screens/hardware.css';
