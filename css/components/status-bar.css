@@ -15,11 +15,6 @@
 .status-bar a {
   color: black;
 }
-.side-menu__login a,
-.side-menu__logout a,
-.side-menu__mypage a {
-  color: rgba(0, 0, 0, 0.5);
-}
 .logo {
   height: 100%;
   text-align: center;
@@ -235,6 +230,12 @@
     align-items: center;
     width: 17%;
   }
+  .sm\:side-menu__login a,
+  .sm\:side-menu__logout a,
+  .sm\:side-menu__mypage a {
+    -webkit-appearance: none;
+    color: rgba(0, 0, 0, 0.5);
+  }
   .sm\:logo {
     /* width: 6.2rem; */
     width: 15%;
@@ -407,6 +408,7 @@
 }
 
 .dropdown-item {
+  -webkit-appearance: none;
   display: block;
   width: 100%;
   padding: 0.25rem 1rem;
@@ -472,7 +474,9 @@
 .side-menu__mypage a:hover {
   color: rgba(0, 0, 0);
 }
-
-.mg-r {
-  margin-right: 4rem;
+.menu__intro,
+.menu__hard,
+.menu__soft,
+.menu__re {
+  -webkit-appearance: none;
 }
