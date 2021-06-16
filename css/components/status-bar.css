@@ -410,8 +410,8 @@
 .dropdown-item {
   -webkit-appearance: none;
   display: block;
-  width: 100%;
-  /* padding: 0.25rem 1rem; */
+  /* width: 100%; */
+  padding: 0.25rem 1rem;
   clear: both;
   font-weight: 400;
   color: #212529;
