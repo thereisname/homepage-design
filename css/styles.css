@@ -1,5 +1,3 @@
-@import url();
-
 @import 'reset.css';
 @import 'variables.css';
 
@@ -19,7 +17,7 @@
 @import 'screens/join.css';
 @import 'screens/login.css';
 @import 'screens/mypage.css';
-@import 'screens/review.css';
+@import 'screens/support.css';
 @import 'screens/software.css';
 @import 'screens/find.css';
 @import 'screens/profile.css';

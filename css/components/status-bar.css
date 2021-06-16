@@ -452,13 +452,6 @@
   background-color: #343a40;
   border-color: rgba(0, 0, 0, 0.15);
 }
-.dropdown-menu-dark .dropdown-item {
-  color: #dee2e6;
-}
-.dropdown-menu-dark .dropdown-item.disabled,
-.dropdown-menu-dark .dropdown-item:disabled {
-  color: #adb5bd;
-}
 .dropdown-menu-dark .dropdown-divider {
   border-color: rgba(0, 0, 0, 0.15);
 }
